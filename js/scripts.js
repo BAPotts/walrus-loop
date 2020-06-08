@@ -1,10 +1,10 @@
 $(document).ready(function() {
   
-  let array = ["'h1'","'p'","'img'"];
+  let array = ["header","paragraph","image"];
 
-  array.forEach(function(selector) {
-    $(selector).click(function() {
-      alert("This is a an element.");
+  array.forEach(function(description) {
+    $("h1").click(function() {
+      alert(description);
     });
   });
 });
