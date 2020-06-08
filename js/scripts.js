@@ -1,13 +1,9 @@
 $(document).ready(function() {
-   $("h1").click(function() {
-    alert("This is a header.");
-  });
-
-  $("p").click(function() {
-    alert("This is a paragraph.");
-  });
-
-  $("img").click(function() {
-    alert("This is an image.");
+  
+  let array = [ ['h1', 'header'], ['p', 'paragraph'], ['img', 'image']];
+  array.forEach(function( selector, description) {
+    $(selector).click(function() {
+      alert("This is a " + description + ".");
+    });
   });
 });
